@@ -1884,6 +1884,19 @@ button:hover {
     flex-direction: column;
     gap: 15px;
 }
+@media (max-width: 991.98px) {
+  .actions {
+    bottom: 70px;
+}
+}
+
+@media (max-width: 575.98px) {
+  
+.actions {
+  
+    bottom: 50px;
+}
+}
 .btn-cta {
     display: flex;
     align-items: center;
