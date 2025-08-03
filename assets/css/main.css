@@ -1871,3 +1871,89 @@ button:hover {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+
+/* CTA */
+
+.actions {
+    position: fixed;
+    bottom: 100px;
+    right: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.btn-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #28a745;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 60px;
+    height: 60px;
+}
+
+.btn-call {
+    animation: shake 0.6s infinite;
+}
+
+.btn-fb {
+    animation: bounce-shake 3s infinite;
+    background-color: #4267b2;
+}
+
+.btn-cta svg {
+    width: 100%;
+}
+
+@keyframes bounce-shake {
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    10% {
+        transform: translateY(-5px) rotate(2deg);
+    }
+    20% {
+        transform: translateY(0px) rotate(-2deg);
+    }
+    30% {
+        transform: translateY(-3px) rotate(1.5deg);
+    }
+    40% {
+        transform: translateY(0px) rotate(-1.5deg);
+    }
+    50% {
+        transform: translateY(-2px) rotate(1deg);
+    }
+    60% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(5deg);
+    }
+    40% {
+        transform: rotate(-5deg);
+    }
+    60% {
+        transform: rotate(4deg);
+    }
+    80% {
+        transform: rotate(-4deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
