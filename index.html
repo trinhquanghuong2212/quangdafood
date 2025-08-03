@@ -1,834 +1,820 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Floko event</title>
-    <link rel="stylesheet" href="./assets/css/main.css" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Floko event</title>
+        <link rel="stylesheet" href="./assets/css/main.css" />
 
-    <!-- embed font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+        <!-- embed font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
 
-    <!-- Favicon -->
-    <link
-      rel="icon"
-      type="image/png"
-      href="./assets/favicon/favicon-96x96.png"
-      sizes="96x96"
-    />
-    <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/favicon/apple-touch-icon.png"
-    />
-    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="./assets/favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
+        <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
 
-    <!-- embed link gg ads -->
-     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XHWE211KE1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        <!-- embed link gg ads -->
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XHWE211KE1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
 
-  gtag('config', 'G-XHWE211KE1');
-</script>
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__row">
-        <span class="header__bar">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-            <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-            <path
-              fill="#fff"
-              d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
-            />
-          </svg>
-        </span>
-        <!-- logo -->
-        <a href="#" class="logo header__logo">
-          <svg
-            width="120"
-            height="26"
-            viewBox="0 0 120 26"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M26.3636 5.46875L29 0H16.0818L8.29033 17.4479L11.7009 25L15.4239 16.4062H21.3545L23.9909 10.6771H18.0832L20.3573 5.46875H26.3636Z"
-              fill="white"
-            />
-            <path d="M0 0L6.64822 14.0625L13.1818 0H0Z" fill="white" />
-            <path
-              d="M35 26V0H51.1757V4.81088H39.9997V10.3293H48.9699V15.1401H39.9997V26H35Z"
-              fill="white"
-            />
-            <path d="M53.0238 26V0H58.0236V26H53.0238Z" fill="white" />
-            <path
-              d="M70.6295 26C68.6321 26 66.8797 25.5696 65.3724 24.7088C63.8652 23.8481 62.6887 22.663 61.8432 21.1537C61.0099 19.6327 60.5933 17.8875 60.5933 15.9184C60.5933 13.9256 61.0222 12.1746 61.88 10.6653C62.7378 9.14422 63.9203 7.95918 65.4276 7.1102C66.9348 6.26123 68.6688 5.83674 70.6295 5.83674C72.627 5.83674 74.3793 6.26712 75.8866 7.12789C77.4061 7.98866 78.5887 9.17959 79.4342 10.7007C80.2798 12.21 80.7025 13.9492 80.7025 15.9184C80.7025 17.8993 80.2736 19.6503 79.4158 21.1714C78.5703 22.6807 77.3878 23.8658 75.8682 24.7265C74.3609 25.5755 72.6147 26 70.6295 26ZM70.6295 21.5075C72.2348 21.5075 73.4296 20.9887 74.2139 19.951C75.0104 18.9016 75.4087 17.5574 75.4087 15.9184C75.4087 14.2204 75.0043 12.8644 74.1955 11.8503C73.399 10.8363 72.2103 10.3293 70.6295 10.3293C69.5389 10.3293 68.6443 10.5651 67.9458 11.0367C67.2473 11.5084 66.7265 12.1628 66.3834 13C66.0525 13.8372 65.8871 14.81 65.8871 15.9184C65.8871 17.6281 66.2854 18.99 67.0819 20.0041C67.8907 21.0064 69.0732 21.5075 70.6295 21.5075Z"
-              fill="white"
-            />
-            <path
-              d="M82.9066 26V0H87.9799V15.5646L94.7075 6.36735H100.884L93.7149 15.9184L101.214 26H94.7075L87.9799 16.2721L88.0166 26H82.9066Z"
-              fill="white"
-            />
-            <path
-              d="M109.927 26C107.93 26 106.177 25.5696 104.67 24.7088C103.163 23.8481 101.986 22.663 101.141 21.1537C100.307 19.6327 99.8907 17.8875 99.8907 15.9184C99.8907 13.9256 100.32 12.1746 101.177 10.6653C102.035 9.14422 103.218 7.95918 104.725 7.1102C106.232 6.26123 107.966 5.83674 109.927 5.83674C111.924 5.83674 113.677 6.26712 115.184 7.12789C116.704 7.98866 117.886 9.17959 118.732 10.7007C119.577 12.21 120 13.9492 120 15.9184C120 17.8993 119.571 19.6503 118.713 21.1714C117.868 22.6807 116.685 23.8658 115.166 24.7265C113.658 25.5755 111.912 26 109.927 26ZM109.927 21.5075C111.532 21.5075 112.727 20.9887 113.511 19.951C114.308 18.9016 114.706 17.5574 114.706 15.9184C114.706 14.2204 114.302 12.8644 113.493 11.8503C112.696 10.8363 111.508 10.3293 109.927 10.3293C108.836 10.3293 107.942 10.5651 107.243 11.0367C106.545 11.5084 106.024 12.1628 105.681 13C105.35 13.8372 105.185 14.81 105.185 15.9184C105.185 17.6281 105.583 18.99 106.379 20.0041C107.188 21.0064 108.371 21.5075 109.927 21.5075Z"
-              fill="white"
-            />
-          </svg>
-        </a>
-        <!-- nav -->
-        <nav class="header__nav">
-          <ul class="header__list">
-            <li class="header__item">
-              <a href="#" class="header__link header__link--active">Home</a>
-            </li>
-            <li class="header__item">
-              <a href="#footer" class="header__link">About</a>
-            </li>
-            <li class="header__item">
-              <a href="#schedule" class="header__link">Schedule</a>
-            </li>
-            <li class="header__item">
-              <a href="#team" class="header__link">Team</a>
-            </li>
-            <li class="header__item">
-              <a href="#footer" class="header__link">Contacts</a>
-            </li>
-          </ul>
-        </nav>
-        <!-- register -->
-        <button class="header__btn">Register Now</button>
-      </div>
-    </header>
-
-    <div class="modal">
-      <div class="modal__container">
-        <button class="modal__close">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-            <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-            <path
-              fill="#fff"
-              d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
-            />
-          </svg>
-        </button>
-
-        <div class="modal__content">
-          <!-- nav -->
-          <nav class="modal__nav">
-            <ul class="modal__list">
-              <li class="modal__item">
-                <a href="#" class="modal__link modal__link--active">Home</a>
-              </li>
-              <li class="modal__item">
-                <a href="#footer" class="modal__link">About</a>
-              </li>
-              <li class="modal__item">
-                <a href="#schedule" class="modal__link">Schedule</a>
-              </li>
-              <li class="modal__item">
-                <a href="#team" class="modal__link">Team</a>
-              </li>
-              <li class="modal__item">
-                <a href="#footer" class="modal__link">Contacts</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
-
-    <!-- Main -->
-    <main>
-      <div class="container">
-        <!-- Section hero -->
-        <section class="hero">
-          <div class="row">
-            <div class="col-12 col-lg-12 col-md-12">
-              <div class="hero__inner">
-                <p class="hero__desc">
-                  OCTOBER 18-22, 2021 / REMOTE DESIGN WEEK
-                </p>
-                <h1 class="hero__heading">Our Design Event is coming up!</h1>
-                <div class="hero__row">
-                  <button class="hero__btn hero__btn--seat">BOOK A SEAT</button>
-                  <button class="hero__btn">LEARN MORE</button>
-                </div>
-
-                <!-- decor -->
-                <div class="hero-decor">
-                  <img loading="lazy" src="./assets/imgs/decor-1.svg" alt="" />
-                  <img src="./assets/imgs/decor-circle-large.svg" alt="" />
-                  <img loading="lazy" src="./assets/imgs/decor-1.svg" alt="" />
-                  <img src="./assets/imgs/decor-circle-small.svg" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Section member -->
-        <section class="member">
-          <article class="member__item">
-            <div class="member__img-wrap">
-              <img
-                loading="lazy"
-                src="./assets/imgs/members/member-1.png"
-                alt="Anderson Adam"
-                class="member__img"
-              />
-            </div>
-            <div class="member__content">
-              <h2 class="member__name">Anderson Adam</h2>
-              <p class="member__job">App Designer</p>
-            </div>
-          </article>
-          <article class="member__item">
-            <div class="member__img-wrap">
-              <img
-                loading="lazy"
-                src="./assets/imgs/members/member-2.png"
-                alt="Edwards Reyes"
-                class="member__img"
-              />
-            </div>
-            <div class="member__content">
-              <h2 class="member__name">Edwards Reyes</h2>
-              <p class="member__job">Web Designer</p>
-            </div>
-          </article>
-          <article class="member__item">
-            <div class="member__img-wrap">
-              <img
-                loading="lazy"
-                src="./assets/imgs/members/member-3.png"
-                alt="Rogers Parker"
-                class="member__img"
-              />
-            </div>
-            <div class="member__content">
-              <h2 class="member__name">Rogers Parker</h2>
-              <p class="member__job">Product Designer</p>
-            </div>
-          </article>
-        </section>
-
-        <!-- Section event -->
-        <section id="about" class="event">
-          <div class="row">
-            <!-- left -->
-            <div class="col-12 col-xl-5 col-lg-12">
-              <section class="event__left">
-                <h2 class="heading event__heading">Events You'll Remember</h2>
-                <p class="event__sub-heading">
-                  We are a turnkey event agency in New York.
-                </p>
-                <p class="event__desc line-clamp line-3">
-                  EventiX is a leading event management company in the United
-                  States. We hold the highest quality events pushing the
-                  boundaries of the industry standards.
-                </p>
-                <p class="event__desc line-clamp line-5">
-                  We are passionate about creating integrated experiences that
-                  bring cohesive connection between brands and targeted
-                  audience. Our team of experienced and talented event managers
-                  strive to deliver stellar results.
-                </p>
-              </section>
-            </div>
-
-            <!-- right -->
-            <div class="offset-xl-1 col-xl-6 col-lg-12">
-              <div class="event__right">
-                <figure class="event__img">
-                  <img
-                    loading="lazy"
-                    src="./assets/imgs/event/event-1.png"
-                    alt="Events You'll Remember"
-                  />
-                </figure>
-                <div class="event__time">
-                  <div class="event__group">
-                    <span class="event__num">14</span>
-                    <span class="event__text">Days</span>
-                  </div>
-                  <div class="event__group">
-                    <span class="event__num">12</span>
-                    <span class="event__text">Hours</span>
-                  </div>
-                  <div class="event__group">
-                    <span class="event__num">29</span>
-                    <span class="event__text">Minites</span>
-                  </div>
-                  <div class="event__group">
-                    <span class="event__num">59</span>
-                    <span class="event__text">Seconds </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Section 4 -->
-        <section class="meet">
-          <div class="row">
-            <div class="col">
-              <div class="meet__header">
-                <h2 class="heading meet__heading">
-                  Meet the talented Speakers
-                </h2>
-                <p class="meet__desc">
-                  The convention is the main event of the year for professionals
-                  in the world of design and architecture.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="meet__list">
-            <article class="meet-item">
-              <figure class="meet-item__img">
-                <img
-                  loading="lazy"
-                  src="./assets/imgs/meet/member-1.png"
-                  alt="Duke Stump"
-                />
-              </figure>
-
-              <div class="meet__info">
-                <h2 class="meet__name">Duke Stump</h2>
-                <p class="meet__desc">
-                  Game-Changing CMO & Founder, Nonfire with Soul
-                </p>
-              </div>
-            </article>
-            <article class="meet-item">
-              <figure class="meet-item__img">
-                <img
-                  loading="lazy"
-                  src="./assets/imgs/meet/member-2.png"
-                  alt="Jelani Memory"
-                />
-              </figure>
-
-              <div class="meet__info">
-                <h2 class="meet__name">Jelani Memory</h2>
-                <p class="meet__desc">
-                  Global Authority on Privacy & Security. Founder, Global
-                  Privacy by Design.
-                </p>
-              </div>
-            </article>
-            <article class="meet-item">
-              <figure class="meet-item__img">
-                <img
-                  loading="lazy"
-                  src="./assets/imgs/meet/member-3.png"
-                  alt="Christa Couture"
-                />
-              </figure>
-
-              <div class="meet__info">
-                <h2 class="meet__name">Christa Couture</h2>
-                <p class="meet__desc">
-                  Advocate, Builder, Changemaker, Youngest Developer in the USA.
-                </p>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <!-- Section schedule -->
-        <section id="schedule" class="schedule">
-          <div class="row">
-            <div class="col-xl-4 col-lg-6">
-              <div class="schedule__left">
-                <h2 class="heading schedule__heading">Schedule</h2>
-                <p class="schedule__desc">
-                  A representation of the event planning of the Design
-                  Conference
-                </p>
-                <button class="schedule__btn">Download Schedule</button>
-              </div>
-            </div>
-            <div class="offset-xl-1 col-xl-7 col-lg-6">
-              <div class="schedule__right">
-                <div class="schudele-process__top">
-                  <div
-                    class="schudele-process__gr schudele-process__gr--active"
-                  >
-                    <p class="schudele-process__day-title">Day One</p>
-                    <p class="schudele-process__date">
-                      05<span> April, Tuesday</span>
-                    </p>
-                  </div>
-                  <div class="schudele-process__gr">
-                    <p class="schudele-process__day-title">Day Secend</p>
-                    <p class="schudele-process__date">
-                      06<span> April, Tuesday</span>
-                    </p>
-                  </div>
-                  <div class="schudele-process__gr">
-                    <p class="schudele-process__day-title">Day Third</p>
-                    <p class="schudele-process__date">
-                      07<span> April, Tuesday</span>
-                    </p>
-                  </div>
-                </div>
-                <div class="schudele-process__bottom">
-                  <div class="schudele-process__row">
-                    <p class="schudele-process__time">8:00 AM - 9:00 AM</p>
-                    <div class="schudele-process__circle"></div>
-                    <div class="schudele-process__content">
-                      <h3 class="schudele-process__title">
-                        Registration & Coffee
-                      </h3>
-                      <p class="schudele-process__desc">
-                        Register your personal data in customer service and take
-                        coffee before entering the room
-                      </p>
-                    </div>
-                  </div>
-                  <div class="schudele-process__row">
-                    <p class="schudele-process__time">9:00 AM - 10:00 AM</p>
-                    <div class="schudele-process__circle"></div>
-                    <div class="schudele-process__content">
-                      <h3 class="schudele-process__title">
-                        Plan & Conduct User Research
-                      </h3>
-                      <p class="schudele-process__desc">
-                        Many early researchers are challanged by aspect of the
-                        design and implementation of research studies as well
-                        the efective dissemunation.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="schudele-process__row">
-                    <p class="schudele-process__time">10:00 AM - 11:00 AM</p>
-                    <div class="schudele-process__circle"></div>
-                    <div class="schudele-process__content">
-                      <h3 class="schudele-process__title">Q&A For Speaker</h3>
-                      <p class="schudele-process__desc">
-                        Register your personal data in customer service and take
-                        coffee before entering the room
-                      </p>
-                    </div>
-                  </div>
-                  <div class="schudele-process__row">
-                    <p class="schudele-process__time">11:00 AM - 12:00 AM</p>
-                    <div class="schudele-process__circle"></div>
-                    <div class="schudele-process__content">
-                      <h3 class="schudele-process__title">Launch Break</h3>
-                      <p class="schudele-process__desc">
-                        Register your personal data
-                      </p>
-                    </div>
-                  </div>
-                  <div class="schudele-process__row">
-                    <p class="schudele-process__time">12:00 AM - 1:00 PM</p>
-                    <div class="schudele-process__circle"></div>
-                    <div class="schudele-process__content">
-                      <h3 class="schudele-process__title">
-                        Research For The Right Thing
-                      </h3>
-                      <p class="schudele-process__desc">
-                        Register your personal data in customer service and take
-                        coffee before entering the room
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Section tickets -->
-        <section class="ticket">
-          <!-- header -->
-          <div class="row">
-            <div class="col">
-              <div class="ticket__inner">
-                <h2 class="heading ticket__heading">Pricing Tickets</h2>
-              </div>
-            </div>
-          </div>
-
-          <!-- body -->
-          <div class="ticket__list">
-            <article class="ticket-item">
-              <div class="ticket-item__header">
-                <h2 class="ticket-item__title">Standart</h2>
-                <p class="ticket-item__desc">$20/mo per member</p>
-              </div>
-              <div class="ticket-item__body">
-                <ul class="ticket-item__list">
-                  <li class="ticket-item__item">
-                    One day pas access all lecture
-                  </li>
-                  <li class="ticket-item__item">Lunch and snack</li>
-                  <li class="ticket-item__item">Free T-Shirt</li>
-                  <li class="ticket-item__item">Meet Event Speaker</li>
-                  <li class="ticket-item__item">Front Seat</li>
-                  <li class="ticket-item__item">Certificate</li>
-                </ul>
-                <button class="ticket-item__btn">
-                  Get Your Ticket
-                  <span>
-                    <svg
-                      width="28"
-                      height="28"
-                      viewBox="0 0 28 28"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M4.375 14H23.625"
-                        stroke="white"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M15.75 6.125L23.625 14L15.75 21.875"
-                        stroke="white"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
+            gtag('config', 'G-XHWE211KE1');
+        </script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__row">
+                <span class="header__bar">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path
+                            fill="#fff"
+                            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+                        />
                     </svg>
-                  </span>
-                </button>
-              </div>
-            </article>
-
-            <!-- item 2 -->
-            <article class="ticket-item">
-              <div class="ticket-item__header ticket-item__header--premium">
-                <h2 class="ticket-item__title">Premium</h2>
-                <p class="ticket-item__desc">$35/mo per member</p>
-              </div>
-              <div class="ticket-item__body">
-                <ul class="ticket-item__list">
-                  <li class="ticket-item__item ticket-item__item--premium">
-                    Two-day pass, access all lectures
-                  </li>
-                  <li class="ticket-item__item ticket-item__item--premium">
-                    Lunch, snack & coffee break
-                  </li>
-                  <li class="ticket-item__item ticket-item__item--premium">
-                    Exclusive event merch
-                  </li>
-                  <li class="ticket-item__item ticket-item__item--premium">
-                    Meet Event Speaker
-                  </li>
-                  <li class="ticket-item__item ticket-item__item--premium">
-                    Private Q&A with speakers
-                  </li>
-                  <li class="ticket-item__item ticket-item__item--premium">
-                    VIP seating
-                  </li>
-                </ul>
-                <button class="ticket-item__btn">
-                  Get Your Ticket
-                  <span>
-                    <svg
-                      width="28"
-                      height="28"
-                      viewBox="0 0 28 28"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M4.375 14H23.625"
-                        stroke="white"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M15.75 6.125L23.625 14L15.75 21.875"
-                        stroke="white"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </article>
-
-            <!-- item 3 -->
-            <article class="ticket-item">
-              <div class="ticket-item__header ticket-item__header--enterprise">
-                <h2 class="ticket-item__title">Enterprise</h2>
-                <p class="ticket-item__desc">Custom pricing</p>
-              </div>
-              <div class="ticket-item__body">
-                <ul class="ticket-item__list">
-                  <li class="ticket-item__item ticket-item__item--enterprise">
-                    Full event pass, access to all sessions
-                  </li>
-                  <li class="ticket-item__item ticket-item__item--enterprise">
-                    All meals included (breakfast, lunch)
-                  </li>
-                  <li class="ticket-item__item ticket-item__item--enterprise">
-                    Customized event merch package
-                  </li>
-                  <li class="ticket-item__item ticket-item__item--enterprise">
-                    One-on-one meeting with keynote
-                  </li>
-                  <li class="ticket-item__item ticket-item__item--enterprise">
-                    Priority front-row seating
-                  </li>
-                  <li class="ticket-item__item ticket-item__item--enterprise">
-                    Exclusive networking opportunities
-                  </li>
-                </ul>
-                <button class="ticket-item__btn">
-                  Get Your Ticket
-                  <span>
-                    <svg
-                      width="28"
-                      height="28"
-                      viewBox="0 0 28 28"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M4.375 14H23.625"
-                        stroke="white"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M15.75 6.125L23.625 14L15.75 21.875"
-                        stroke="white"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <!-- Section  -->
-        <section id="team" class="slider">
-          <div class="slider__inner">
-            <!-- item 1 -->
-            <div class="slider-item">
-              <div class="row row-cols-md-3">
-                <div class="offset-xl-1 col-xl-4">
-                  <figure class="slider__img-wrap">
-                    <img
-                      loading="lazy"
-                      src="./assets/imgs/slider/member-1.png"
-                      alt="Jonathan Kennedy"
-                      class="slider__img"
-                    />
-                  </figure>
-                </div>
-                <div class="col-xl-4">
-                  <div class="slider__content">
-                    <h2 class="slider__heading">Jonathan Kennedy</h2>
-                    <p class="slider__sub-heading">Founder of Producthunt</p>
-                    <p class="slider__desc line-clamp line-10">
-                      "We just want to say thank you to Floko and to their
-                      highly professional staff! They have supported us
-                      throughout all the event. Everything was well organized!
-                      The event's turned to be a great success! You deserve the
-                      highest grade!" "We just want to say thank you to Floko
-                      and to their highly professional staff! They have
-                      supported us throughout all the event. Everything was well
-                      organized! The event's turned to be a great success! You
-                      deserve the highest grade!""We just want to say thank you
-                      to Floko and to their highly professional staff! They have
-                      supported us throughout all the event. Everything was well
-                      organized! The event's turned to be a great success! You
-                      deserve the highest grade!"
-                    </p>
-                  </div>
-                </div>
-                <div class="offset-xl-1 col-xl-2">
-                  <figure class="slider__img-wrap slider__img-wrap">
-                    <img
-                      loading="lazy"
-                      src="./assets/imgs/slider/member-1.png"
-                      alt="Jonathan Kennedy"
-                      class="slider__img slider__img-last"
-                    />
-                  </figure>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="slider__control">
-            <div class="slider__label slider__label--active"></div>
-            <div class="slider__label"></div>
-            <div class="slider__label"></div>
-          </div>
-        </section>
-      </div>
-    </main>
-
-    <!-- Section 7 -->
-    <footer id="footer" class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-lg-4 col-xl-4 col-md-12 col-sm-12">
-            <!-- logo -->
-            <a href="#" class="logo">
-              <svg
-                width="120"
-                height="26"
-                viewBox="0 0 120 26"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M26.3636 5.46875L29 0H16.0818L8.29033 17.4479L11.7009 25L15.4239 16.4062H21.3545L23.9909 10.6771H18.0832L20.3573 5.46875H26.3636Z"
-                  fill="white"
-                />
-                <path d="M0 0L6.64822 14.0625L13.1818 0H0Z" fill="white" />
-                <path
-                  d="M35 26V0H51.1757V4.81088H39.9997V10.3293H48.9699V15.1401H39.9997V26H35Z"
-                  fill="white"
-                />
-                <path d="M53.0238 26V0H58.0236V26H53.0238Z" fill="white" />
-                <path
-                  d="M70.6295 26C68.6321 26 66.8797 25.5696 65.3724 24.7088C63.8652 23.8481 62.6887 22.663 61.8432 21.1537C61.0099 19.6327 60.5933 17.8875 60.5933 15.9184C60.5933 13.9256 61.0222 12.1746 61.88 10.6653C62.7378 9.14422 63.9203 7.95918 65.4276 7.1102C66.9348 6.26123 68.6688 5.83674 70.6295 5.83674C72.627 5.83674 74.3793 6.26712 75.8866 7.12789C77.4061 7.98866 78.5887 9.17959 79.4342 10.7007C80.2798 12.21 80.7025 13.9492 80.7025 15.9184C80.7025 17.8993 80.2736 19.6503 79.4158 21.1714C78.5703 22.6807 77.3878 23.8658 75.8682 24.7265C74.3609 25.5755 72.6147 26 70.6295 26ZM70.6295 21.5075C72.2348 21.5075 73.4296 20.9887 74.2139 19.951C75.0104 18.9016 75.4087 17.5574 75.4087 15.9184C75.4087 14.2204 75.0043 12.8644 74.1955 11.8503C73.399 10.8363 72.2103 10.3293 70.6295 10.3293C69.5389 10.3293 68.6443 10.5651 67.9458 11.0367C67.2473 11.5084 66.7265 12.1628 66.3834 13C66.0525 13.8372 65.8871 14.81 65.8871 15.9184C65.8871 17.6281 66.2854 18.99 67.0819 20.0041C67.8907 21.0064 69.0732 21.5075 70.6295 21.5075Z"
-                  fill="white"
-                />
-                <path
-                  d="M82.9066 26V0H87.9799V15.5646L94.7075 6.36735H100.884L93.7149 15.9184L101.214 26H94.7075L87.9799 16.2721L88.0166 26H82.9066Z"
-                  fill="white"
-                />
-                <path
-                  d="M109.927 26C107.93 26 106.177 25.5696 104.67 24.7088C103.163 23.8481 101.986 22.663 101.141 21.1537C100.307 19.6327 99.8907 17.8875 99.8907 15.9184C99.8907 13.9256 100.32 12.1746 101.177 10.6653C102.035 9.14422 103.218 7.95918 104.725 7.1102C106.232 6.26123 107.966 5.83674 109.927 5.83674C111.924 5.83674 113.677 6.26712 115.184 7.12789C116.704 7.98866 117.886 9.17959 118.732 10.7007C119.577 12.21 120 13.9492 120 15.9184C120 17.8993 119.571 19.6503 118.713 21.1714C117.868 22.6807 116.685 23.8658 115.166 24.7265C113.658 25.5755 111.912 26 109.927 26ZM109.927 21.5075C111.532 21.5075 112.727 20.9887 113.511 19.951C114.308 18.9016 114.706 17.5574 114.706 15.9184C114.706 14.2204 114.302 12.8644 113.493 11.8503C112.696 10.8363 111.508 10.3293 109.927 10.3293C108.836 10.3293 107.942 10.5651 107.243 11.0367C106.545 11.5084 106.024 12.1628 105.681 13C105.35 13.8372 105.185 14.81 105.185 15.9184C105.185 17.6281 105.583 18.99 106.379 20.0041C107.188 21.0064 108.371 21.5075 109.927 21.5075Z"
-                  fill="white"
-                />
-              </svg>
-            </a>
-          </div>
-          <div class="col-12 col-lg-2 col-xl-2 col-md-12 col-sm-12">
-            <div class="footer-item">
-              <h3 class="footer__heading">Navigate</h3>
-              <ul class="footer__list">
-                <li class="footer__item">
-                  <a href="#" class="footer__link">Home</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__link">Speakers</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__link">About</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__link">Contact</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__link">HELL YES! Moments</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__link">Legal</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-12 col-lg-2 col-xl-2 col-md-12 col-sm-12">
-            <div class="footer-item">
-              <h3 class="footer__heading">Speakers</h3>
-              <ul class="footer__list">
-                <li class="footer__item">
-                  <a href="#" class="footer__link">Ananya Caro</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__link">Christa Couture</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__link">Duke Jelani</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__link">Dr. Arwin Adam</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__link">Pawrence Julie</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__link">Anderson Adom</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-12 col-lg-4 col-xl-4 col-md-12 col-sm-12">
-            <div class="footer-item">
-              <h3 class="footer__heading">Newsletter</h3>
-              <p class="footer__desc">
-                Sign up to be first to receive the latest stories inspiring us,
-                case studies, and industry news.
-              </p>
-              <div class="footer__group">
-                <input type="text" placeholder="Your name" />
-                <input type="text" placeholder="Email address" />
-              </div>
-              <button class="footer__btn">Subscribe</button>
-            </div>
-          </div>
-        </div>
-        <div class="footer__copyright">
-          <p class="footer__copy">© Created by uihut.com</p>
-          <ul class="footer__media">
-            <li class="footer__media-item">
-              <a href="#!" class="footer__media-link">
-                <span>
-                  <svg
-                    width="20"
-                    height="16"
-                    viewBox="0 0 20 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M19.7029 2.11415C19.0071 2.42248 18.2596 2.63082 17.4737 2.72498C18.2846 2.23981 18.8912 1.4762 19.1804 0.576649C18.4186 1.02914 17.5849 1.34765 16.7154 1.51832C16.1307 0.894037 15.3563 0.480255 14.5124 0.341211C13.6684 0.202168 12.8022 0.345642 12.0481 0.74936C11.2941 1.15308 10.6944 1.79445 10.3422 2.5739C9.99003 3.35335 9.90503 4.22727 10.1004 5.05998C8.55682 4.98248 7.04677 4.58127 5.66827 3.8824C4.28977 3.18353 3.07362 2.20262 2.09875 1.00332C1.76542 1.57832 1.57375 2.24498 1.57375 2.95498C1.57338 3.59415 1.73078 4.22352 2.03198 4.78726C2.33319 5.351 2.76888 5.83168 3.30042 6.18665C2.68398 6.16703 2.08114 6.00047 1.54208 5.70082V5.75082C1.54202 6.64727 1.85211 7.51613 2.41974 8.20998C2.98736 8.90383 3.77756 9.37992 4.65625 9.55748C4.0844 9.71225 3.48486 9.73504 2.90292 9.62415C3.15083 10.3955 3.63375 11.07 4.28406 11.5533C4.93437 12.0365 5.71951 12.3043 6.52958 12.3191C5.15444 13.3987 3.45616 13.9842 1.70792 13.9816C1.39823 13.9817 1.08881 13.9636 0.78125 13.9275C2.55581 15.0685 4.62153 15.674 6.73125 15.6716C13.8729 15.6716 17.7771 9.75665 17.7771 4.62665C17.7771 4.45998 17.7729 4.29165 17.7654 4.12498C18.5248 3.57579 19.1803 2.89573 19.7013 2.11665L19.7029 2.11415Z"
-                      fill="#bfbfbf"
-                    />
-                  </svg>
                 </span>
-                Twitter
-              </a>
-            </li>
-            <li class="footer__media-item">
-              <a href="#!" class="footer__media-link">
-                <img loading="lazy" src="./assets/imgs/linkedin.svg" alt="" />
-                Linkedin
-              </a>
-            </li>
-            <li class="footer__media-item">
-              <a href="#!" class="footer__media-link">
-                <img loading="lazy" src="./assets/imgs/instagram.svg" alt="" />
-                Instagram
-              </a>
-            </li>
-          </ul>
+                <!-- logo -->
+                <a href="#" class="logo header__logo">
+                    <svg
+                        width="120"
+                        height="26"
+                        viewBox="0 0 120 26"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M26.3636 5.46875L29 0H16.0818L8.29033 17.4479L11.7009 25L15.4239 16.4062H21.3545L23.9909 10.6771H18.0832L20.3573 5.46875H26.3636Z"
+                            fill="white"
+                        />
+                        <path d="M0 0L6.64822 14.0625L13.1818 0H0Z" fill="white" />
+                        <path
+                            d="M35 26V0H51.1757V4.81088H39.9997V10.3293H48.9699V15.1401H39.9997V26H35Z"
+                            fill="white"
+                        />
+                        <path d="M53.0238 26V0H58.0236V26H53.0238Z" fill="white" />
+                        <path
+                            d="M70.6295 26C68.6321 26 66.8797 25.5696 65.3724 24.7088C63.8652 23.8481 62.6887 22.663 61.8432 21.1537C61.0099 19.6327 60.5933 17.8875 60.5933 15.9184C60.5933 13.9256 61.0222 12.1746 61.88 10.6653C62.7378 9.14422 63.9203 7.95918 65.4276 7.1102C66.9348 6.26123 68.6688 5.83674 70.6295 5.83674C72.627 5.83674 74.3793 6.26712 75.8866 7.12789C77.4061 7.98866 78.5887 9.17959 79.4342 10.7007C80.2798 12.21 80.7025 13.9492 80.7025 15.9184C80.7025 17.8993 80.2736 19.6503 79.4158 21.1714C78.5703 22.6807 77.3878 23.8658 75.8682 24.7265C74.3609 25.5755 72.6147 26 70.6295 26ZM70.6295 21.5075C72.2348 21.5075 73.4296 20.9887 74.2139 19.951C75.0104 18.9016 75.4087 17.5574 75.4087 15.9184C75.4087 14.2204 75.0043 12.8644 74.1955 11.8503C73.399 10.8363 72.2103 10.3293 70.6295 10.3293C69.5389 10.3293 68.6443 10.5651 67.9458 11.0367C67.2473 11.5084 66.7265 12.1628 66.3834 13C66.0525 13.8372 65.8871 14.81 65.8871 15.9184C65.8871 17.6281 66.2854 18.99 67.0819 20.0041C67.8907 21.0064 69.0732 21.5075 70.6295 21.5075Z"
+                            fill="white"
+                        />
+                        <path
+                            d="M82.9066 26V0H87.9799V15.5646L94.7075 6.36735H100.884L93.7149 15.9184L101.214 26H94.7075L87.9799 16.2721L88.0166 26H82.9066Z"
+                            fill="white"
+                        />
+                        <path
+                            d="M109.927 26C107.93 26 106.177 25.5696 104.67 24.7088C103.163 23.8481 101.986 22.663 101.141 21.1537C100.307 19.6327 99.8907 17.8875 99.8907 15.9184C99.8907 13.9256 100.32 12.1746 101.177 10.6653C102.035 9.14422 103.218 7.95918 104.725 7.1102C106.232 6.26123 107.966 5.83674 109.927 5.83674C111.924 5.83674 113.677 6.26712 115.184 7.12789C116.704 7.98866 117.886 9.17959 118.732 10.7007C119.577 12.21 120 13.9492 120 15.9184C120 17.8993 119.571 19.6503 118.713 21.1714C117.868 22.6807 116.685 23.8658 115.166 24.7265C113.658 25.5755 111.912 26 109.927 26ZM109.927 21.5075C111.532 21.5075 112.727 20.9887 113.511 19.951C114.308 18.9016 114.706 17.5574 114.706 15.9184C114.706 14.2204 114.302 12.8644 113.493 11.8503C112.696 10.8363 111.508 10.3293 109.927 10.3293C108.836 10.3293 107.942 10.5651 107.243 11.0367C106.545 11.5084 106.024 12.1628 105.681 13C105.35 13.8372 105.185 14.81 105.185 15.9184C105.185 17.6281 105.583 18.99 106.379 20.0041C107.188 21.0064 108.371 21.5075 109.927 21.5075Z"
+                            fill="white"
+                        />
+                    </svg>
+                </a>
+                <!-- nav -->
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="#" class="header__link header__link--active">Home</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#footer" class="header__link">About</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#schedule" class="header__link">Schedule</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#team" class="header__link">Team</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#footer" class="header__link">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- register -->
+                <button class="header__btn">Register Now</button>
+            </div>
+        </header>
+
+        <div class="modal">
+            <div class="modal__container">
+                <button class="modal__close">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path
+                            fill="#fff"
+                            d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+                        />
+                    </svg>
+                </button>
+
+                <div class="modal__content">
+                    <!-- nav -->
+                    <nav class="modal__nav">
+                        <ul class="modal__list">
+                            <li class="modal__item">
+                                <a href="#" class="modal__link modal__link--active">Home</a>
+                            </li>
+                            <li class="modal__item">
+                                <a href="#footer" class="modal__link">About</a>
+                            </li>
+                            <li class="modal__item">
+                                <a href="#schedule" class="modal__link">Schedule</a>
+                            </li>
+                            <li class="modal__item">
+                                <a href="#team" class="modal__link">Team</a>
+                            </li>
+                            <li class="modal__item">
+                                <a href="#footer" class="modal__link">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
-      </div>
-    </footer>
-    <!-- CTA -->
+
+        <!-- Main -->
+        <main>
+            <div class="container">
+                <!-- Section hero -->
+                <section class="hero">
+                    <div class="row">
+                        <div class="col-12 col-lg-12 col-md-12">
+                            <div class="hero__inner">
+                                <p class="hero__desc">OCTOBER 18-22, 2021 / REMOTE DESIGN WEEK</p>
+                                <h1 class="hero__heading">Cá mút đá</h1>
+                                <div class="hero__row">
+                                    <button class="hero__btn hero__btn--seat">BOOK A SEAT</button>
+                                    <button class="hero__btn">LEARN MORE</button>
+                                </div>
+
+                                <!-- decor -->
+                                <div class="hero-decor">
+                                    <img loading="lazy" src="./assets/imgs/decor-1.svg" alt="" />
+                                    <img src="./assets/imgs/decor-circle-large.svg" alt="" />
+                                    <img loading="lazy" src="./assets/imgs/decor-1.svg" alt="" />
+                                    <img src="./assets/imgs/decor-circle-small.svg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section member -->
+                <section class="member">
+                    <article class="member__item">
+                        <div class="member__img-wrap">
+                            <img
+                                loading="lazy"
+                                src="./assets/imgs/members/member-1.png"
+                                alt="Anderson Adam"
+                                class="member__img"
+                            />
+                        </div>
+                        <div class="member__content">
+                            <h2 class="member__name">Anderson Adam</h2>
+                            <p class="member__job">App Designer</p>
+                        </div>
+                    </article>
+                    <article class="member__item">
+                        <div class="member__img-wrap">
+                            <img
+                                loading="lazy"
+                                src="./assets/imgs/members/member-2.png"
+                                alt="Edwards Reyes"
+                                class="member__img"
+                            />
+                        </div>
+                        <div class="member__content">
+                            <h2 class="member__name">Edwards Reyes</h2>
+                            <p class="member__job">Web Designer</p>
+                        </div>
+                    </article>
+                    <article class="member__item">
+                        <div class="member__img-wrap">
+                            <img
+                                loading="lazy"
+                                src="./assets/imgs/members/member-3.png"
+                                alt="Rogers Parker"
+                                class="member__img"
+                            />
+                        </div>
+                        <div class="member__content">
+                            <h2 class="member__name">Rogers Parker</h2>
+                            <p class="member__job">Product Designer</p>
+                        </div>
+                    </article>
+                </section>
+
+                <!-- Section event -->
+                <section id="about" class="event">
+                    <div class="row">
+                        <!-- left -->
+                        <div class="col-12 col-xl-5 col-lg-12">
+                            <section class="event__left">
+                                <h2 class="heading event__heading">Events You'll Remember</h2>
+                                <p class="event__sub-heading">
+                                    We are a turnkey event agency in New York.
+                                </p>
+                                <p class="event__desc line-clamp line-3">
+                                    EventiX is a leading event management company in the United
+                                    States. We hold the highest quality events pushing the
+                                    boundaries of the industry standards.
+                                </p>
+                                <p class="event__desc line-clamp line-5">
+                                    We are passionate about creating integrated experiences that
+                                    bring cohesive connection between brands and targeted audience.
+                                    Our team of experienced and talented event managers strive to
+                                    deliver stellar results.
+                                </p>
+                            </section>
+                        </div>
+
+                        <!-- right -->
+                        <div class="offset-xl-1 col-xl-6 col-lg-12">
+                            <div class="event__right">
+                                <figure class="event__img">
+                                    <img
+                                        loading="lazy"
+                                        src="./assets/imgs/event/event-1.png"
+                                        alt="Events You'll Remember"
+                                    />
+                                </figure>
+                                <div class="event__time">
+                                    <div class="event__group">
+                                        <span class="event__num">14</span>
+                                        <span class="event__text">Days</span>
+                                    </div>
+                                    <div class="event__group">
+                                        <span class="event__num">12</span>
+                                        <span class="event__text">Hours</span>
+                                    </div>
+                                    <div class="event__group">
+                                        <span class="event__num">29</span>
+                                        <span class="event__text">Minites</span>
+                                    </div>
+                                    <div class="event__group">
+                                        <span class="event__num">59</span>
+                                        <span class="event__text">Seconds </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 4 -->
+                <section class="meet">
+                    <div class="row">
+                        <div class="col">
+                            <div class="meet__header">
+                                <h2 class="heading meet__heading">Meet the talented Speakers</h2>
+                                <p class="meet__desc">
+                                    The convention is the main event of the year for professionals
+                                    in the world of design and architecture.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="meet__list">
+                        <article class="meet-item">
+                            <figure class="meet-item__img">
+                                <img
+                                    loading="lazy"
+                                    src="./assets/imgs/meet/member-1.png"
+                                    alt="Duke Stump"
+                                />
+                            </figure>
+
+                            <div class="meet__info">
+                                <h2 class="meet__name">Duke Stump</h2>
+                                <p class="meet__desc">
+                                    Game-Changing CMO & Founder, Nonfire with Soul
+                                </p>
+                            </div>
+                        </article>
+                        <article class="meet-item">
+                            <figure class="meet-item__img">
+                                <img
+                                    loading="lazy"
+                                    src="./assets/imgs/meet/member-2.png"
+                                    alt="Jelani Memory"
+                                />
+                            </figure>
+
+                            <div class="meet__info">
+                                <h2 class="meet__name">Jelani Memory</h2>
+                                <p class="meet__desc">
+                                    Global Authority on Privacy & Security. Founder, Global Privacy
+                                    by Design.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="meet-item">
+                            <figure class="meet-item__img">
+                                <img
+                                    loading="lazy"
+                                    src="./assets/imgs/meet/member-3.png"
+                                    alt="Christa Couture"
+                                />
+                            </figure>
+
+                            <div class="meet__info">
+                                <h2 class="meet__name">Christa Couture</h2>
+                                <p class="meet__desc">
+                                    Advocate, Builder, Changemaker, Youngest Developer in the USA.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- Section schedule -->
+                <section id="schedule" class="schedule">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-6">
+                            <div class="schedule__left">
+                                <h2 class="heading schedule__heading">Schedule</h2>
+                                <p class="schedule__desc">
+                                    A representation of the event planning of the Design Conference
+                                </p>
+                                <button class="schedule__btn">Download Schedule</button>
+                            </div>
+                        </div>
+                        <div class="offset-xl-1 col-xl-7 col-lg-6">
+                            <div class="schedule__right">
+                                <div class="schudele-process__top">
+                                    <div class="schudele-process__gr schudele-process__gr--active">
+                                        <p class="schudele-process__day-title">Day One</p>
+                                        <p class="schudele-process__date">
+                                            05<span> April, Tuesday</span>
+                                        </p>
+                                    </div>
+                                    <div class="schudele-process__gr">
+                                        <p class="schudele-process__day-title">Day Secend</p>
+                                        <p class="schudele-process__date">
+                                            06<span> April, Tuesday</span>
+                                        </p>
+                                    </div>
+                                    <div class="schudele-process__gr">
+                                        <p class="schudele-process__day-title">Day Third</p>
+                                        <p class="schudele-process__date">
+                                            07<span> April, Tuesday</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="schudele-process__bottom">
+                                    <div class="schudele-process__row">
+                                        <p class="schudele-process__time">8:00 AM - 9:00 AM</p>
+                                        <div class="schudele-process__circle"></div>
+                                        <div class="schudele-process__content">
+                                            <h3 class="schudele-process__title">
+                                                Registration & Coffee
+                                            </h3>
+                                            <p class="schudele-process__desc">
+                                                Register your personal data in customer service and
+                                                take coffee before entering the room
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="schudele-process__row">
+                                        <p class="schudele-process__time">9:00 AM - 10:00 AM</p>
+                                        <div class="schudele-process__circle"></div>
+                                        <div class="schudele-process__content">
+                                            <h3 class="schudele-process__title">
+                                                Plan & Conduct User Research
+                                            </h3>
+                                            <p class="schudele-process__desc">
+                                                Many early researchers are challanged by aspect of
+                                                the design and implementation of research studies as
+                                                well the efective dissemunation.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="schudele-process__row">
+                                        <p class="schudele-process__time">10:00 AM - 11:00 AM</p>
+                                        <div class="schudele-process__circle"></div>
+                                        <div class="schudele-process__content">
+                                            <h3 class="schudele-process__title">Q&A For Speaker</h3>
+                                            <p class="schudele-process__desc">
+                                                Register your personal data in customer service and
+                                                take coffee before entering the room
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="schudele-process__row">
+                                        <p class="schudele-process__time">11:00 AM - 12:00 AM</p>
+                                        <div class="schudele-process__circle"></div>
+                                        <div class="schudele-process__content">
+                                            <h3 class="schudele-process__title">Launch Break</h3>
+                                            <p class="schudele-process__desc">
+                                                Register your personal data
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="schudele-process__row">
+                                        <p class="schudele-process__time">12:00 AM - 1:00 PM</p>
+                                        <div class="schudele-process__circle"></div>
+                                        <div class="schudele-process__content">
+                                            <h3 class="schudele-process__title">
+                                                Research For The Right Thing
+                                            </h3>
+                                            <p class="schudele-process__desc">
+                                                Register your personal data in customer service and
+                                                take coffee before entering the room
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section tickets -->
+                <section class="ticket">
+                    <!-- header -->
+                    <div class="row">
+                        <div class="col">
+                            <div class="ticket__inner">
+                                <h2 class="heading ticket__heading">Pricing Tickets</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- body -->
+                    <div class="ticket__list">
+                        <article class="ticket-item">
+                            <div class="ticket-item__header">
+                                <h2 class="ticket-item__title">Standart</h2>
+                                <p class="ticket-item__desc">$20/mo per member</p>
+                            </div>
+                            <div class="ticket-item__body">
+                                <ul class="ticket-item__list">
+                                    <li class="ticket-item__item">
+                                        One day pas access all lecture
+                                    </li>
+                                    <li class="ticket-item__item">Lunch and snack</li>
+                                    <li class="ticket-item__item">Free T-Shirt</li>
+                                    <li class="ticket-item__item">Meet Event Speaker</li>
+                                    <li class="ticket-item__item">Front Seat</li>
+                                    <li class="ticket-item__item">Certificate</li>
+                                </ul>
+                                <button class="ticket-item__btn">
+                                    Get Your Ticket
+                                    <span>
+                                        <svg
+                                            width="28"
+                                            height="28"
+                                            viewBox="0 0 28 28"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M4.375 14H23.625"
+                                                stroke="white"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M15.75 6.125L23.625 14L15.75 21.875"
+                                                stroke="white"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </article>
+
+                        <!-- item 2 -->
+                        <article class="ticket-item">
+                            <div class="ticket-item__header ticket-item__header--premium">
+                                <h2 class="ticket-item__title">Premium</h2>
+                                <p class="ticket-item__desc">$35/mo per member</p>
+                            </div>
+                            <div class="ticket-item__body">
+                                <ul class="ticket-item__list">
+                                    <li class="ticket-item__item ticket-item__item--premium">
+                                        Two-day pass, access all lectures
+                                    </li>
+                                    <li class="ticket-item__item ticket-item__item--premium">
+                                        Lunch, snack & coffee break
+                                    </li>
+                                    <li class="ticket-item__item ticket-item__item--premium">
+                                        Exclusive event merch
+                                    </li>
+                                    <li class="ticket-item__item ticket-item__item--premium">
+                                        Meet Event Speaker
+                                    </li>
+                                    <li class="ticket-item__item ticket-item__item--premium">
+                                        Private Q&A with speakers
+                                    </li>
+                                    <li class="ticket-item__item ticket-item__item--premium">
+                                        VIP seating
+                                    </li>
+                                </ul>
+                                <button class="ticket-item__btn">
+                                    Get Your Ticket
+                                    <span>
+                                        <svg
+                                            width="28"
+                                            height="28"
+                                            viewBox="0 0 28 28"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M4.375 14H23.625"
+                                                stroke="white"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M15.75 6.125L23.625 14L15.75 21.875"
+                                                stroke="white"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </article>
+
+                        <!-- item 3 -->
+                        <article class="ticket-item">
+                            <div class="ticket-item__header ticket-item__header--enterprise">
+                                <h2 class="ticket-item__title">Enterprise</h2>
+                                <p class="ticket-item__desc">Custom pricing</p>
+                            </div>
+                            <div class="ticket-item__body">
+                                <ul class="ticket-item__list">
+                                    <li class="ticket-item__item ticket-item__item--enterprise">
+                                        Full event pass, access to all sessions
+                                    </li>
+                                    <li class="ticket-item__item ticket-item__item--enterprise">
+                                        All meals included (breakfast, lunch)
+                                    </li>
+                                    <li class="ticket-item__item ticket-item__item--enterprise">
+                                        Customized event merch package
+                                    </li>
+                                    <li class="ticket-item__item ticket-item__item--enterprise">
+                                        One-on-one meeting with keynote
+                                    </li>
+                                    <li class="ticket-item__item ticket-item__item--enterprise">
+                                        Priority front-row seating
+                                    </li>
+                                    <li class="ticket-item__item ticket-item__item--enterprise">
+                                        Exclusive networking opportunities
+                                    </li>
+                                </ul>
+                                <button class="ticket-item__btn">
+                                    Get Your Ticket
+                                    <span>
+                                        <svg
+                                            width="28"
+                                            height="28"
+                                            viewBox="0 0 28 28"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M4.375 14H23.625"
+                                                stroke="white"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M15.75 6.125L23.625 14L15.75 21.875"
+                                                stroke="white"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- Section  -->
+                <section id="team" class="slider">
+                    <div class="slider__inner">
+                        <!-- item 1 -->
+                        <div class="slider-item">
+                            <div class="row row-cols-md-3">
+                                <div class="offset-xl-1 col-xl-4">
+                                    <figure class="slider__img-wrap">
+                                        <img
+                                            loading="lazy"
+                                            src="./assets/imgs/slider/member-1.png"
+                                            alt="Jonathan Kennedy"
+                                            class="slider__img"
+                                        />
+                                    </figure>
+                                </div>
+                                <div class="col-xl-4">
+                                    <div class="slider__content">
+                                        <h2 class="slider__heading">Jonathan Kennedy</h2>
+                                        <p class="slider__sub-heading">Founder of Producthunt</p>
+                                        <p class="slider__desc line-clamp line-10">
+                                            "We just want to say thank you to Floko and to their
+                                            highly professional staff! They have supported us
+                                            throughout all the event. Everything was well organized!
+                                            The event's turned to be a great success! You deserve
+                                            the highest grade!" "We just want to say thank you to
+                                            Floko and to their highly professional staff! They have
+                                            supported us throughout all the event. Everything was
+                                            well organized! The event's turned to be a great
+                                            success! You deserve the highest grade!""We just want to
+                                            say thank you to Floko and to their highly professional
+                                            staff! They have supported us throughout all the event.
+                                            Everything was well organized! The event's turned to be
+                                            a great success! You deserve the highest grade!"
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="offset-xl-1 col-xl-2">
+                                    <figure class="slider__img-wrap slider__img-wrap">
+                                        <img
+                                            loading="lazy"
+                                            src="./assets/imgs/slider/member-1.png"
+                                            alt="Jonathan Kennedy"
+                                            class="slider__img slider__img-last"
+                                        />
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__control">
+                        <div class="slider__label slider__label--active"></div>
+                        <div class="slider__label"></div>
+                        <div class="slider__label"></div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Section 7 -->
+        <footer id="footer" class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-4 col-xl-4 col-md-12 col-sm-12">
+                        <!-- logo -->
+                        <a href="#" class="logo">
+                            <svg
+                                width="120"
+                                height="26"
+                                viewBox="0 0 120 26"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M26.3636 5.46875L29 0H16.0818L8.29033 17.4479L11.7009 25L15.4239 16.4062H21.3545L23.9909 10.6771H18.0832L20.3573 5.46875H26.3636Z"
+                                    fill="white"
+                                />
+                                <path d="M0 0L6.64822 14.0625L13.1818 0H0Z" fill="white" />
+                                <path
+                                    d="M35 26V0H51.1757V4.81088H39.9997V10.3293H48.9699V15.1401H39.9997V26H35Z"
+                                    fill="white"
+                                />
+                                <path d="M53.0238 26V0H58.0236V26H53.0238Z" fill="white" />
+                                <path
+                                    d="M70.6295 26C68.6321 26 66.8797 25.5696 65.3724 24.7088C63.8652 23.8481 62.6887 22.663 61.8432 21.1537C61.0099 19.6327 60.5933 17.8875 60.5933 15.9184C60.5933 13.9256 61.0222 12.1746 61.88 10.6653C62.7378 9.14422 63.9203 7.95918 65.4276 7.1102C66.9348 6.26123 68.6688 5.83674 70.6295 5.83674C72.627 5.83674 74.3793 6.26712 75.8866 7.12789C77.4061 7.98866 78.5887 9.17959 79.4342 10.7007C80.2798 12.21 80.7025 13.9492 80.7025 15.9184C80.7025 17.8993 80.2736 19.6503 79.4158 21.1714C78.5703 22.6807 77.3878 23.8658 75.8682 24.7265C74.3609 25.5755 72.6147 26 70.6295 26ZM70.6295 21.5075C72.2348 21.5075 73.4296 20.9887 74.2139 19.951C75.0104 18.9016 75.4087 17.5574 75.4087 15.9184C75.4087 14.2204 75.0043 12.8644 74.1955 11.8503C73.399 10.8363 72.2103 10.3293 70.6295 10.3293C69.5389 10.3293 68.6443 10.5651 67.9458 11.0367C67.2473 11.5084 66.7265 12.1628 66.3834 13C66.0525 13.8372 65.8871 14.81 65.8871 15.9184C65.8871 17.6281 66.2854 18.99 67.0819 20.0041C67.8907 21.0064 69.0732 21.5075 70.6295 21.5075Z"
+                                    fill="white"
+                                />
+                                <path
+                                    d="M82.9066 26V0H87.9799V15.5646L94.7075 6.36735H100.884L93.7149 15.9184L101.214 26H94.7075L87.9799 16.2721L88.0166 26H82.9066Z"
+                                    fill="white"
+                                />
+                                <path
+                                    d="M109.927 26C107.93 26 106.177 25.5696 104.67 24.7088C103.163 23.8481 101.986 22.663 101.141 21.1537C100.307 19.6327 99.8907 17.8875 99.8907 15.9184C99.8907 13.9256 100.32 12.1746 101.177 10.6653C102.035 9.14422 103.218 7.95918 104.725 7.1102C106.232 6.26123 107.966 5.83674 109.927 5.83674C111.924 5.83674 113.677 6.26712 115.184 7.12789C116.704 7.98866 117.886 9.17959 118.732 10.7007C119.577 12.21 120 13.9492 120 15.9184C120 17.8993 119.571 19.6503 118.713 21.1714C117.868 22.6807 116.685 23.8658 115.166 24.7265C113.658 25.5755 111.912 26 109.927 26ZM109.927 21.5075C111.532 21.5075 112.727 20.9887 113.511 19.951C114.308 18.9016 114.706 17.5574 114.706 15.9184C114.706 14.2204 114.302 12.8644 113.493 11.8503C112.696 10.8363 111.508 10.3293 109.927 10.3293C108.836 10.3293 107.942 10.5651 107.243 11.0367C106.545 11.5084 106.024 12.1628 105.681 13C105.35 13.8372 105.185 14.81 105.185 15.9184C105.185 17.6281 105.583 18.99 106.379 20.0041C107.188 21.0064 108.371 21.5075 109.927 21.5075Z"
+                                    fill="white"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="col-12 col-lg-2 col-xl-2 col-md-12 col-sm-12">
+                        <div class="footer-item">
+                            <h3 class="footer__heading">Navigate</h3>
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Home</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Speakers</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">About</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Contact</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">HELL YES! Moments</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Legal</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-2 col-xl-2 col-md-12 col-sm-12">
+                        <div class="footer-item">
+                            <h3 class="footer__heading">Speakers</h3>
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Ananya Caro</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Christa Couture</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Duke Jelani</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Dr. Arwin Adam</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Pawrence Julie</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Anderson Adom</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 col-xl-4 col-md-12 col-sm-12">
+                        <div class="footer-item">
+                            <h3 class="footer__heading">Newsletter</h3>
+                            <p class="footer__desc">
+                                Sign up to be first to receive the latest stories inspiring us, case
+                                studies, and industry news.
+                            </p>
+                            <div class="footer__group">
+                                <input type="text" placeholder="Your name" />
+                                <input type="text" placeholder="Email address" />
+                            </div>
+                            <button class="footer__btn">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    <p class="footer__copy">© Created by uihut.com</p>
+                    <ul class="footer__media">
+                        <li class="footer__media-item">
+                            <a href="#!" class="footer__media-link">
+                                <span>
+                                    <svg
+                                        width="20"
+                                        height="16"
+                                        viewBox="0 0 20 16"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M19.7029 2.11415C19.0071 2.42248 18.2596 2.63082 17.4737 2.72498C18.2846 2.23981 18.8912 1.4762 19.1804 0.576649C18.4186 1.02914 17.5849 1.34765 16.7154 1.51832C16.1307 0.894037 15.3563 0.480255 14.5124 0.341211C13.6684 0.202168 12.8022 0.345642 12.0481 0.74936C11.2941 1.15308 10.6944 1.79445 10.3422 2.5739C9.99003 3.35335 9.90503 4.22727 10.1004 5.05998C8.55682 4.98248 7.04677 4.58127 5.66827 3.8824C4.28977 3.18353 3.07362 2.20262 2.09875 1.00332C1.76542 1.57832 1.57375 2.24498 1.57375 2.95498C1.57338 3.59415 1.73078 4.22352 2.03198 4.78726C2.33319 5.351 2.76888 5.83168 3.30042 6.18665C2.68398 6.16703 2.08114 6.00047 1.54208 5.70082V5.75082C1.54202 6.64727 1.85211 7.51613 2.41974 8.20998C2.98736 8.90383 3.77756 9.37992 4.65625 9.55748C4.0844 9.71225 3.48486 9.73504 2.90292 9.62415C3.15083 10.3955 3.63375 11.07 4.28406 11.5533C4.93437 12.0365 5.71951 12.3043 6.52958 12.3191C5.15444 13.3987 3.45616 13.9842 1.70792 13.9816C1.39823 13.9817 1.08881 13.9636 0.78125 13.9275C2.55581 15.0685 4.62153 15.674 6.73125 15.6716C13.8729 15.6716 17.7771 9.75665 17.7771 4.62665C17.7771 4.45998 17.7729 4.29165 17.7654 4.12498C18.5248 3.57579 19.1803 2.89573 19.7013 2.11665L19.7029 2.11415Z"
+                                            fill="#bfbfbf"
+                                        />
+                                    </svg>
+                                </span>
+                                Twitter
+                            </a>
+                        </li>
+                        <li class="footer__media-item">
+                            <a href="#!" class="footer__media-link">
+                                <img loading="lazy" src="./assets/imgs/linkedin.svg" alt="" />
+                                Linkedin
+                            </a>
+                        </li>
+                        <li class="footer__media-item">
+                            <a href="#!" class="footer__media-link">
+                                <img loading="lazy" src="./assets/imgs/instagram.svg" alt="" />
+                                Instagram
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- CTA -->
         <div class="actions">
             <a href="tel: 0972 780 160" class="btn-cta btn-call">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
@@ -851,6 +837,6 @@
             </a>
         </div>
 
-    <script src="./script.js"></script>
-  </body>
+        <script src="./script.js"></script>
+    </body>
 </html>
