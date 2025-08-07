@@ -1,0 +1,43 @@
+.info {
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+
+    &__bottom {
+        flex-direction: row-reverse;
+        padding-top: 150px;
+    }
+
+    &__heading {
+        color: var(--White, #fff);
+        font-size: 64px;
+        font-weight: 500;
+        line-height: 115.625%;
+        text-transform: capitalize;
+    }
+
+    &__desc {
+        margin-top: 10px;
+        color: var(--white-80, rgba(255, 255, 255, 0.8));
+        font-size: 2rem;
+        line-height: 162.5%;
+    }
+
+    &__right {
+        width: 570px;
+        height: 362px;
+        object-fit: cover;
+        flex-shrink: 0;
+        border-radius: 10px;
+    }
+
+    &__list {
+        margin-top: 15px;
+        list-style: square;
+        &--item {
+            color: var(--white-80, rgba(255, 255, 255, 0.8));
+            font-size: 1.6rem;
+            line-height: 162.5%;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "name": "quangdafood",
+    "version": "1.0.0",
+    "main": "script.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "sass": "sass scss:assets/css -w"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/trinhquanghuong2212/quangdafood.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/trinhquanghuong2212/quangdafood/issues"
+    },
+    "homepage": "https://github.com/trinhquanghuong2212/quangdafood#readme",
+    "description": ""
+}

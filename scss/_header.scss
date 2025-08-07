@@ -1,0 +1,132 @@
+.heading {
+    font-weight: 700;
+    font-size: 7.2rem;
+    line-height: 106%;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.header {
+    position: relative;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 20px 70px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+@media (max-width: 767.98px) {
+    .header {
+        padding: 20px 18px;
+    }
+}
+.header__bar {
+    width: 24px;
+    height: 24px;
+    display: none;
+}
+@media (max-width: 991.98px) {
+    .header__bar {
+        display: block;
+    }
+}
+.header__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width: 991.98px) {
+    .header__logo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+.header__list {
+    display: flex;
+    color: #fff;
+}
+@media (max-width: 991.98px) {
+    .header__list {
+        display: none;
+    }
+}
+.header__link {
+    padding: 18px;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #bfbfbf;
+}
+.header__link--active {
+    color: #fff;
+}
+.header__link:hover {
+    color: #fff;
+}
+.header__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 30px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 130px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+@media (max-width: 767.98px) {
+    .header__btn {
+        display: none;
+    }
+}
+
+.modal {
+    position: fixed;
+    z-index: 99;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity, visibility;
+    transition-duration: 0.3s;
+}
+.modal.show {
+    opacity: 1;
+    visibility: visible;
+}
+.modal__container {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    padding: 30px;
+    background: #292e39;
+    width: 70vw;
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+}
+.modal.show .modal__container {
+    transform: translateX(0);
+}
+.modal__close {
+    width: 24px;
+    height: 24px;
+}
+.modal__content {
+    margin-top: 30px;
+}
+.modal__link {
+    display: block;
+    font-size: 1.6rem;
+    padding: 10px 0;
+    color: #fff;
+}
+.modal__link:hover {
+    text-decoration: underline;
+}
