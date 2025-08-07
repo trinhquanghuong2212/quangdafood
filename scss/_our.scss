@@ -1,6 +1,11 @@
 .our {
     padding-top: 100px;
     margin-top: 20px;
+    padding-left: 15px;
+
+    @media (max-width: 575.98px) {
+        padding-top: 50px;
+    }
 
     &__bottom {
         margin-top: 60px;
@@ -10,14 +15,18 @@
         @media (max-width: 1199.98px) {
             flex-direction: column;
         }
-    }
 
-    &__list {
-        padding-left: 15px;
+        @media (max-width: 991.98px) {
+            margin-top: 30px;
+        }
     }
 
     &__item:not(:last-of-type) {
         margin-bottom: 50px;
+
+        @media (max-width: 991.98px) {
+            margin-bottom: 30px;
+        }
     }
 
     &__title {
@@ -49,6 +58,10 @@
         margin-top: 30px;
     }
 
+    &__heading {
+        padding-left: 15px;
+    }
+
     &__list {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -65,17 +78,28 @@
 
         @media (max-width: 575.98px) {
             grid-template-columns: 1fr;
+            gap: 15px;
         }
     }
 
     &__img-wrap {
         display: flex;
-        flex: 1;
         height: 500px;
         border-radius: 15px;
-        background: red;
         overflow: hidden;
         cursor: pointer;
+
+        @media (max-width: 1199.98px) {
+            height: 370px;
+        }
+
+        @media (max-width: 991.98px) {
+            height: 300px;
+        }
+
+        @media (max-width: 575.98px) {
+            height: 230px;
+        }
 
         &:hover img {
             scale: 1.2;
